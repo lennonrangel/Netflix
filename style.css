@@ -30,6 +30,7 @@ video {
     bottom: 20%;
     left: 5%;
     width: 35%;
+    z-index: 3;
 }
 
 .capa-titulo {
