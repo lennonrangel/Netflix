@@ -82,3 +82,12 @@ video {
     margin-bottom: 10px;
 }
 
+.botao-som{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
