@@ -6,6 +6,7 @@ body {
     padding: 0;
     font-family: "Montserrat", sans-serif;
     position: relative;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 
@@ -68,15 +69,16 @@ video {
     height: 150px;
 }
 
+#carouselExampleControls{
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
 .titulo-carrossel{
     color: #fff;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-#carouselExampleSlidesOnly{
-    background-color: transparent;
-    position: absolute;
-    bottom: 10px;
-    left: 50px;
-}
