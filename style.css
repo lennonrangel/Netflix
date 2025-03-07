@@ -57,7 +57,7 @@ video {
     cursor: pointer;
 }
 
-.link-info{
+.link-info {
     color: #000;
     background-color: rgba(255, 255, 255, 0.35);
     padding: 10px 20px;
@@ -65,24 +65,24 @@ video {
     cursor: pointer;
 }
 
-.imagem-carrossel{
+.imagem-carrossel {
     height: 150px;
 }
 
-#carouselExampleControls{
+#carouselExampleControls {
     background-color: transparent;
     position: absolute;
     bottom: 10px;
     left: 50px;
 }
 
-.titulo-carrossel{
+.titulo-carrossel {
     color: #fff;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.botao-som{
+.botao-som {
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -91,3 +91,15 @@ video {
     top: 100px;
     right: 20px;
 }
+
+.modal {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(o, o, o, 0.8);
+}
+
+.modal-conteudo {}
