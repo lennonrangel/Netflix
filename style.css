@@ -43,3 +43,29 @@ li{
     height: 30px;
     border-radius: 3px;
 }
+
+video {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.capa {
+    position: absolute;
+    bottom: 35%;
+    left: 55px;
+    width: 35%;
+    z-index: 3;
+}
+
+.capa-titulo {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.capa-descricao {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
