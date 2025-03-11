@@ -88,3 +88,70 @@ video {
     border-radius: 4px;
     cursor: pointer;
 }
+
+/* Carrossel */
+  
+.carrossel {
+    position: relative;
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  
+.galeria {
+    overflow-x: auto;
+}
+  
+.seta-esquerda,
+.seta-direita {
+    position: absolute;
+    left: 0;
+    right: auto;
+    font-size: 40px;
+    width: 40px;
+    height: 140px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 300%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+}
+  
+.seta-esquerda:hover,
+.seta-direita:hover {
+    opacity: 1;
+}
+  
+.seta-direita {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+  
+.imagens-galeria {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 6px;
+}
+  
+.item {
+    width: auto;
+    height: 140px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    border-radius: 4px;
+}
+  
+/* This is from w3schools: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Ocultar barra de rolagem para o Chrome, Safari e Opera*/
+.galeria::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Ocultar barra de rolagem para o IE, Edge e Firefox */
+.galeria {
+    -ms-overflow-style: none; /* IE e Edge */
+    scrollbar-width: none; /* Firefox */
+} 
