@@ -9,35 +9,40 @@
 </head>
 
 <body>
-    <!-- Menu de navegação -->
-    <nav>
-        <img src="./img/logo.png" class="logo">
-        <img src="./img/avatar.png" class="avatar">
+    <!-- Cabeçalho-->
+    <header>
+      <!-- Menu de navegação -->
+      <nav>
+        <img src="./img/logo.png" class="logo" alt="Logo da Netflix">
+        <img src="./img/avatar.png" class="avatar" alt="Avatar do usuário">
         <ul class="list-menu">
-          <li><a>Início</a></li>
-          <li><a>Séries</a></li>
-          <li><a>Filmes</a></li>
-          <li><a>Bombando</a></li>
-          <li><a>Minha lista</a></li>
-          <li><a>Navegar por idioma</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#series">Séries</a></li>
+          <li><a href="#filmes">Filmes</a></li>
+          <li><a href="#bombando">Bombando</a></li>
+          <li><a href="#minha-lista">Minha lista</a></li>
+          <li><a href="#idiomas">Navegar por idioma</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Tela inicial -->
-    <div class="capa">
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Tela inicial -->
+      <div class="capa">
         <h1 class="capa-titulo">Stranger Things</h1>
         <p class="capa-descricao">Stranger Things é uma série de ficção científica criada pelos irmãos Duffer para a
-            Netflix. Situada na cidade de ficcional de Hawkings, Indiana, a trama começa no ano de 1983 com o
-            desaparecimento do garoto Will.</p>
-        <a class="link-assistir">Assistir</a>
-        <a class="link-info">Mais informações</a>
-    </div>
-
-    <!-- Vídeo -->
-    <video src="./video/stranger-things.mp4" autoplay muted loop class="video"></video>
-
-    <!-- Carrossel -->
-    <div class="carrossel">
+          Netflix. Situada na cidade de ficcional de Hawkings, Indiana, a trama começa no ano de 1983 com o
+          desaparecimento do garoto Will.</p>
+        <a href="#assistir" class="link-assistir">Assistir</a>
+        <a href="#info" class="link-info">Mais informações</a>
+      </div>
+    
+      <!-- Vídeo -->
+      <video src="./video/stranger-things.mp4" autoplay muted loop class="video" aria-label="Trailer de Stranger Things"></video>
+    
+      <!-- Carrossel -->
+      <div class="carrossel">
         <button class="seta-esquerda" aria-label="Prev">❮</button>
         <button class="seta-direita" aria-label="Next">❯</button>
         <div class="galeria">
@@ -55,7 +60,8 @@
             <img src="./img/the-plataform.png" alt="the plataform" class="item">
           </div>
         </div>
-    </div>
+      </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
