@@ -115,20 +115,27 @@ video {
 
 /* Carrossel */ 
 .carrossel {
-    position: relative;
+    position: absolute;
+    bottom: 2%;
+    left: 40px;
     padding: 15px;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
 }
   
 .galeria {
     overflow-x: auto;
 }
+
+.galeria .titulo-carrossel{
+    color: #fff;
+}
   
 .seta-esquerda,
 .seta-direita {
     position: absolute;
     left: 0;
+    bottom: 15px;
     right: auto;
     font-size: 40px;
     width: 40px;
