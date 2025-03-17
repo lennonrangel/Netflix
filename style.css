@@ -134,12 +134,14 @@ nav {
     bottom: 2%;
     left: 40px;
     padding: 15px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
+    overflow: hidden;
 }
   
 .galeria {
     overflow-x: auto;
+    width: 100%;
 }
 
 .titulo-carrossel{
@@ -188,7 +190,7 @@ nav {
     transition: all 600ms ease-in-out;
     border-radius: 4px;
 }
-  
+
 /* This is from w3schools: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 /* Ocultar barra de rolagem para o Chrome, Safari e Opera*/
 .galeria::-webkit-scrollbar {
