@@ -5,6 +5,12 @@ let imagensGaleria = document.querySelector(".imagens-galeria");
 let item = document.querySelectorAll(".item");
 let maxItem = item.length;
 
+let botaoSom = document.querySelector(".botao-som")
+let video = document.querySelector(".video")
+let botao = document.querySelector(".link-info")
+let info = document.querySelector(".info")
+let audio = document.querySelector(".audio")
+
 let currentIndex = 0;
 
 // Função para rolar o carrossel
@@ -37,3 +43,15 @@ setaEsquerda.addEventListener("click", () => {
   }
   Carousel();
 });
+
+// Mais informações
+botao.addEventListener("click", mostrarInfo)
+info.addEventListener("click", esconderInfo)
+
+function mostrarInfo(){
+    info.style.display = "block"
+}
+
+function esconderInfo(){
+    info.style.display = "none"
+}
