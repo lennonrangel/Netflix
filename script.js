@@ -1,31 +1,30 @@
-const setaEsquerda = document.querySelector(".seta-esquerda");
-const setaDireita = document.querySelector(".seta-direita");
-const galeria = document.querySelector(".galeria");
-const imagensGaleria = document.querySelector(".imagens-galeria");
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+let setaEsquerda = document.querySelector(".seta-esquerda");
+let setaDireita = document.querySelector(".seta-direita");
+let galeria = document.querySelector(".galeria");
+let imagensGaleria = document.querySelector(".imagens-galeria");
+let item = document.querySelectorAll(".item");
+let maxItem = item.length;
 
 let currentIndex = 0;
 
 // Função para rolar o carrossel
-function scrollCarousel() {
+function Carousel() {
   // Rola suavemente para o item atual
-  items[currentIndex].scrollIntoView({
+  item[currentIndex].scrollIntoView({
     behavior: "smooth",
     inline: "start",
-    block: "nearest",
   });
 }
 
 // Avançar 6 itens
 setaDireita.addEventListener("click", () => {
-  if (currentIndex + 6 < maxItems) {
+  if (currentIndex + 6 < maxItem) {
     currentIndex += 6;
   } else {
     // Volta para o início se não houver 6 itens à frente
     currentIndex = 0;
   }
-  scrollCarousel();
+  Carousel();
 });
 
 // Retroceder 6 itens
@@ -34,7 +33,7 @@ setaEsquerda.addEventListener("click", () => {
     currentIndex -= 6;
   } else {
     // Vai para o final se não houver 6 itens para trás
-    currentIndex = Math.max(maxItems - 6, 0);
+    currentIndex = Math.max(maxItem - 6, 0);
   }
-  scrollCarousel();
+  Carousel();
 });
