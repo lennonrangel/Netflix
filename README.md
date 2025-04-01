@@ -15,7 +15,6 @@ Agora, o projeto está quase finalizado, faltando apenas alguns ajustes finais, 
 **🠖 Funcionalidades:**
 
 - Carrossel de Filmes e Séries: Navegação horizontal pelos títulos disponíveis.
-- Design Responsivo: Layout adaptável para diferentes tamanhos de tela (em fase de ajustes finais).
 - Interações Dinâmicas: Efeitos de hover e transições suaves para melhorar a experiência do usuário.
 
 <div align="center">
